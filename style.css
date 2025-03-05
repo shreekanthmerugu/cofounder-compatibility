@@ -1,0 +1,105 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ff4757;
+    text-shadow: 2px 2px #fffa65;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+input {
+    padding: 15px;
+    border: 3px dashed #ff4757;
+    border-radius: 10px;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: center;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 20px 0;
+}
+
+button:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+#result {
+    display: none;
+    margin-top: 30px;
+}
+
+.meter {
+    width: 80%;
+    height: 30px;
+    background: #eee;
+    border-radius: 15px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #ff9f43, #ffdd59);
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.score {
+    font-size: 3em;
+    color: #ff4757;
+    margin: 20px 0;
+}
+
+.message {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.factors {
+    list-style: none;
+    padding: 0;
+    font-style: italic;
+    color: #666;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.emoji {
+    font-size: 3em;
+    animation: bounce 1s infinite;
+}
