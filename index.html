@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Soulmates - Co-Founder Compatibility Meter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Startup Soulmates 💼</h1>
+        <div class="input-group">
+            <input type="text" id="name1" placeholder="Founder 1">
+            <input type="text" id="name2" placeholder="Founder 2">
+        </div>
+        <button onclick="calculateCompatibility()">Find Your Match!</button>
+
+        <div id="result">
+            <div class="emoji">🤝</div>
+            <div class="score" id="score">0%</div>
+            <div class="meter">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="message" id="message"></div>
+            <ul class="factors" id="factors"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
